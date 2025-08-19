@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import DesktopHeader from "./DesktopHeader/DesktopHeader.jsx";
+import MobileHeader from "./MobileHeader/MobileHeader.jsx";
 import { useState, useEffect } from "react";
 
 function Header() {
@@ -18,7 +19,7 @@ function Header() {
   if (width > 768) {
     return <DesktopHeader />;
   } else {
-    // return MobileHeader;
+    return <MobileHeader />;
   }
 }
 

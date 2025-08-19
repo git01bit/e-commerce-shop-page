@@ -3,41 +3,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function DesktopHeader() {
   function handleClick(e) {
-    const navbarMenus = document.querySelectorAll("li");
+    const navbarMenus = document.querySelectorAll("a");
 
     navbarMenus.forEach((menu) => {
       menu.classList.remove(styles.active);
     });
+    console.log(e.currentTarget);
 
     e.currentTarget.classList.add(styles.active);
   }
 
   return (
     <header className={styles.logoNavbar}>
-      <div className={styles.logo}>
+      <a className={styles.logo} onClick={(e) => handleClick(e)}>
         <FontAwesomeIcon icon="fa-solid fa-shop" /> فروشگاه
-      </div>
+      </a>
 
       <nav>
         <ul className={styles.navbar}>
-          <li onClick={(e) => handleClick(e)}>
-            <a href="#">محصولات</a>
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
+              محصولات
+            </a>
           </li>
-          <li onClick={(e) => handleClick(e)}>
-            <a href="#">درباره ما</a>
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
+              درباره ما
+            </a>
           </li>
-          <li onClick={(e) => handleClick(e)}>
-            <a href="#">تماس با ما</a>
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
+              تماس با ما
+            </a>
           </li>
           <span></span>
-          <li onClick={(e) => handleClick(e)}>
-            <a href="#">
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
               <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" />
             </a>
           </li>
-          <li onClick={(e) => handleClick(e)}>
-            <a href="#">
-              <FontAwesomeIcon icon="fa-regular fa-circle-user" size="lg" />
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
+              <FontAwesomeIcon icon="fa-regular fa-circle-user" size="xl" />
             </a>
           </li>
         </ul>

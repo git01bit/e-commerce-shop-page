@@ -1,0 +1,97 @@
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+.logoHamburgerIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 0 !important;
+  border: none !important;
+  color: #000 !important;
+  font-size: 24px;
+}
+
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 240px;
+  height: 100dvh;
+  padding: 24px 24px 24px 16px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbarAnimation {
+  transition: all 750ms ease;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  list-style: none;
+}
+
+.hamburgerCloseBtn {
+  width: 100%;
+  text-align: left;
+}
+
+.active {
+  padding-right: 8px;
+  border-right: 2px solid var(--color-accent);
+}
+
+a.active {
+  color: var(--color-accent);
+}
+
+.searchAccountBtns {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  margin-top: 8px;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+}
+
+.search input,
+.search button {
+  padding: 2px 8px;
+  border: 1px solid #000;
+}
+
+.search input {
+  width: 100%;
+  border-left: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.search button {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+  background: none;
+}
+
+.accountBtn {
+  padding: 0;
+  border: none;
+}
