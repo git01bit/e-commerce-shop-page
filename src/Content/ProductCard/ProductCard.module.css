@@ -1,0 +1,76 @@
+.productCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 24px;
+  text-align: center;
+  overflow: auto;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  background-color: rgba(234, 234, 234, 0.5);
+}
+
+.productCard a img {
+  width: 100%;
+  max-width: 256px;
+}
+
+.productNameAndPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 148px;
+}
+
+.productNameAndPrice h2 {
+  font-size: 1.125rem;
+}
+
+.productNameAndPrice div {
+  display: flex;
+  flex-direction: column;
+}
+
+.discountPrice,
+.price {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.originalPrice {
+  font-size: 0.875rem;
+  color: #707070;
+  text-decoration: line-through;
+}
+
+.discountPrice {
+  margin-top: -4px;
+}
+
+.addToCartBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  margin-top: 24px;
+  transition: color 300ms ease;
+}
+
+.addToCartBtn:hover {
+  color: var(--color-accent);
+}
+
+.addToCartBtn svg {
+  padding-top: 4px;
+}
