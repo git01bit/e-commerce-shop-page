@@ -1,0 +1,48 @@
+.logoNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  font-size: 32px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #000;
+}
+
+.navbar a:hover {
+  color: var(--color-accent);
+}
+
+.navbar span {
+  display: inline-block;
+  width: 2px;
+  height: 24px;
+  background: #000;
+}
+
+.navbar a,
+.navbar span {
+  transition: all 300ms ease;
+}
+
+.active {
+  text-decoration: underline 2px solid var(--color-accent);
+  text-underline-offset: 12px;
+}
+
+.active a {
+  color: var(--color-accent);
+}
