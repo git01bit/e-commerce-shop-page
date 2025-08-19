@@ -81,6 +81,10 @@ function MobileHeader() {
         </form>
 
         <a href="#" className={styles.accountBtn} onClick={(e) => handClick(e)}>
+          <FontAwesomeIcon icon="fa-solid fa-cart-shopping" size="xl" />
+        </a>
+
+        <a href="#" className={styles.accountBtn} onClick={(e) => handClick(e)}>
           <FontAwesomeIcon icon="fa-regular fa-circle-user" size="xl" />
         </a>
       </div>

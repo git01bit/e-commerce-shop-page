@@ -44,6 +44,11 @@ function DesktopHeader() {
           </li>
           <li>
             <a href="#" onClick={(e) => handleClick(e)}>
+              <FontAwesomeIcon icon="fa-solid fa-cart-shopping" size="lg" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={(e) => handleClick(e)}>
               <FontAwesomeIcon icon="fa-regular fa-circle-user" size="xl" />
             </a>
           </li>
